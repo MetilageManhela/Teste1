@@ -1,0 +1,15 @@
+cd htdocs/api-laravel
+php artisan serve
+cd htdocs/primeiroprojecto
+php artisan route:list
+php artisan migrate:fresh
+php artisan make:model Models/TipoProduto  -m 
+Migrations----17/03/2020
+php artisan make:model Models/Curso -m
+ php artisan make:model Models/Disciplina -m
+# php artisan make:model Models/Estudante -m
+# php artisan make:model Models/Docente -m
+# php artisan make:model Models/Inscricao -m
+# php artisan make:model Models/Notas-m
+php artisan make:seeder userSeeder
+php artisan ui vue –auth
